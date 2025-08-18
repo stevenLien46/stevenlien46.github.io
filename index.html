@@ -1,18 +1,230 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Steven Lien | Web Developer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link rel="icon" sizes="32x32" href="images/favicon-32x32.png" type="image/png">
+  <link rel="icon" sizes="16x16" href="images/favicon-16x16.png" type="image/png">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo"><a href="#home">Steven Lien</a></h1>
+      <nav class="nav" id="nav">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#workHistory">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="nav-toggle" id="navToggle">☰</button>
+      </nav>
+    </div>
+  </header>
 
-    <title>My First Website with Github</title>
+  <section id="home" class="hero section fade-in-section">
+    <div class="container">
+        <h2>Hello, I'm <span>Steven Lien</span></h2>
+        <p>Front-End Developer crafting responsive, modern websites.</p>
+        <a href="#projects" class="btn">See My Work <i class="fa-solid fa-chevron-right"></i></a>
+      <div class="next-container">
+        <a class="next-icon" href="#about"><i class="fa-solid fa-chevron-down"></i></a>
+      </div>
+  </div>
+  </section>
+  <section id="about" class="about section fade-in-section">
+    <div class="container">
+      <h2 class="heading">About Me</h2>
+      <div class="section-container">
+        <div class="text-container ">
+          <p>Hi there! I’m a Front End Developer based in Toronto with a love for clean code, well-built websites, and solving problems with a creative twist. I've worked with some great teams at places like Maropost and AutoTrader, where I've been involved in everything from full website migrations to A/B testing, cross-platform CMS builds, and collaborating across time zones with global teammates.</p>
 
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="icon" href="images/favicon.png" />
-  </head>
+          <p>I'm fluent in HTML, CSS, JavaScript, and have plenty of hands-on experience with WordPress, HubSpot, Salesforce, Webflow—you name it. Whether it's troubleshooting bugs, building custom templates, or turning a mockup into a pixel-perfect live page, I enjoy diving in and making things work.</p>
 
-  <body>
-  	<h1>Hello World</h1>
-  	<p>This is my first site with github.</p>
-    <script src="js/scripts.js"></script>
-  </body>
+          <p>Outside of coding, I'm big on movement and adventure. I’m super passionate about health and fitness—I’ve completed the Mississauga Marathon (2025), the Sporting Life 10k (2018 & 2019), and tackled the Spartan Race Super back in 2017. One of my proudest moments? Reaching Everest Base Camp in Nepal in 2019—an unforgettable experience. When I’m not running or training, I’m usually trying my hand at a new sport, because if it gets me moving, I’m in.</p>
+
+          <p>Whether it’s building intuitive websites or climbing mountains (literally or metaphorically), I’m always up for the next challenge. Let’s create something awesome together!</p>
+        </div>
+        <div class="img-container">
+          <img class="selfie" src="images/selfie.jpg" alt="a selfie of me"/>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="heading">Projects</h2>
+        <div class="project-wrapper">
+          <div class="project">
+            <div class="project-container">
+              <div class="project-info fade-in-section">
+                <h3 class="heading">Maropost</h3>
+                <p class="info">Built on hubspot using front end languages such as HTML, CSS, tailwind, Javascript</p>
+                <a class="btn" href="https:www.maropost.com">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+              </div>
+              <div class="project-img fade-in-section">
+                 <img class="selfie" src="images/Maropost.png" alt="Maropost"/>
+              </div>
+            </div>
+          </div>
+          <div class="project right">
+            <div class="project-container">
+              <div class="project-info fade-in-section">
+                <h3 class="heading">Mercedes-Benz Brampton</h3>
+                <p class="info">This project was built on wordpress. Technology used HTML, CSS, Javascript, JQuery</p>
+                <a class="btn" href="https://www.mercedes-benz-brampton.ca/en">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+              </div>
+              <div class="project-img fade-in-section"><img class="selfie" src="images/mercedes.png" alt=""/></div>
+            </div>
+          </div>
+          <div class="project">
+            <div class="project-container">
+              <div class="project-info fade-in-section">
+                <h3 class="heading">Destination Honda</h3>
+                <p class="info">This project was built on dealer.com. Technology used  using HTML,CSS, Javascript, JQuery</p>
+                <a class="btn" href="https://www.destinationtoyota.ca/">Learn More <i class="fa-solid fa-chevron-right"></i></a>
+              </div>
+              <div class="project-img fade-in-section"><img class="selfie" src="images/DestinationToyota.png" alt=""/></div>
+            </div>
+          </div>                
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="skills section">
+    <div class="container fade-in-section">
+      <h2 class="heading">Skills</h2>
+      <ul class="skills-list">
+        <li>HTML5</li>
+        <li>CSS3 / SCSS</li>
+        <li>JavaScript (ES6+)</li>
+        <li>React.js</li>
+        <li>Git & GitHub</li>
+        <li>Responsive Design</li>
+        <li>Tailwind CSS</li>
+        <li>Hubspot</li>
+        <li>Wordpress</li>
+        <li>Salesforce Development</li>
+        <li>Dealer.com</li>
+        <li>Webflow</li>
+      </ul>
+    </div>
+  </section>
+  <section id="workHistory" class="workHistory section">
+    <div class="container fade-in-section">
+      <h2 class="heading">Work Experience</h2>
+
+      <div class="job">
+        <h3>Front End Developer – Maropost</h3>
+        <p><strong>Aug. 2021 – Present</strong> | Toronto, Ontario, Canada</p>
+        <ul>
+          <li>Managed the company's websites by developing new themes and templates.</li>
+          <li>Worked with international team members across different time zones.</li>
+          <li>Migrated pages between platforms: from another platform to WordPress, and from WordPress to HubSpot.</li>
+          <li>Worked with HTML, CSS, JavaScript, PHP, SQL.</li>
+          <li>Used Git for version control and deployment to staging/live environments.</li>
+          <li>Created custom templates using ACF in WordPress.</li>
+          <li>Built pages using Salesforce, Webflow, and HubSpot CMS.</li>
+          <li>Tracked work in Jira and collaborated via Microsoft Teams and Outlook.</li>
+          <li>Communicated design intent using Adobe XD.</li>
+          <li>Set up A/B testing to track website performance.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Front End Developer – AutoTrader | TRADER</h3>
+        <p><strong>Sept. 2020 – Aug. 2021</strong> | Toronto, Ontario, Canada</p>
+        <ul>
+          <li>Managed technical support tasks including troubleshooting and diagnostics.</li>
+          <li>Worked on OEM Compliancy Brand guidelines for KIA and BMW.</li>
+          <li>Led a major migration from a legacy platform to WordPress.</li>
+          <li>Performed AODA accessibility testing on client sites.</li>
+          <li>Used JS and CSS to resolve front-end issues.</li>
+          <li>Tracked work using Jira.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Senior Creative Developer – AutoTrader | TRADER</h3>
+        <p><strong>Jun. 2018 – Sept. 2020</strong> | Toronto, Ontario, Canada</p>
+        <ul>
+          <li>Managed a development team and conducted scrum meetings.</li>
+          <li>Led client calls for mockup reviews, updates, and progress reports.</li>
+          <li>Provided technical guidance to other teams regarding platform capabilities.</li>
+          <li>Collaborated closely with designers to implement mockups.</li>
+          <li>Estimated project durations in hours and business days.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Front End Creative Developer – AutoTrader | TRADER</h3>
+        <p><strong>May 2016 – Jun. 2018</strong> | Toronto, Ontario, Canada</p>
+        <ul>
+          <li>Resolved coding issues from service queues.</li>
+          <li>Built websites for external clients alongside internal designers.</li>
+          <li>Customized template themes to match mockup designs.</li>
+          <li>Estimated website completion times based on SOW.</li>
+          <li>Managed multiple projects in a fast-paced environment.</li>
+          <li>Worked with CMS platform Dealer.com.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Junior Web Developer – Osler, Hoskin & Harcourt LLP</h3>
+        <p><strong>Sept. 2015 – Apr. 2016</strong> | Toronto, Ontario, Canada</p>
+        <ul>
+          <li>Created digital advertisements in Adobe Photoshop for internal events.</li>
+          <li>Collaborated with internal clients to create campaign/event websites.</li>
+          <li>Managed intranet site permissions across 6 offices and the New York office.</li>
+        </ul>
+      </div>
+
+      <h2>Technologies & Tools</h2>
+      <ul>
+        <li><strong>Programming:</strong> HTML5, CSS3, JavaScript, jQuery, SCSS, Bootstrap, SQL, PHP, WordPress, SASS, Vue.js</li>
+        <li><strong>Applications:</strong> Adobe Creative Cloud, SharePoint, Microsoft Designer, InfoPath, Teams, Visio, Balsamiq, JIRA, SortSite, Bitbucket, VS Code, FileZilla, CodeKit</li>
+        <li><strong>CMS Platforms:</strong> Dealer.com, HubSpot, Salesforce, Webflow, WordPress, Vanilla</li>
+      </ul>
+
+      <h2>Certifications</h2>
+      <ul>
+        <li>HubSpot CMS Development</li>
+      </ul>
+
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Web Development Certificate</strong> – Humber College, Toronto, ON, Canada (Sept. 2015 – Aug. 2015)</li>
+        <li><strong>Bachelor of Computer Science</strong> – Ryerson University, Toronto, ON, Canada (Sept. 2010 – Apr. 2014)</li>
+      </ul>
+    </div>
+  </section>
+  <section id="contact" class="contact section">
+    <div class="container fade-in-section">
+      <h2 class="heading">Contact</h2>
+        <p>Let's get connected!</p>
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/stevenlien46/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://github.com/stevenLien46"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:steven.lien50@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Steven Lien. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
