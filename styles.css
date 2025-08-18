@@ -211,9 +211,9 @@ header.header .container .logo a:hover{
     transform: scale(1.05);
   }
 }
-/*.hero .next-container{
-  margin-top:-15vh;
-}*/
+.hero .next-container{
+  margin-top:20rem;
+}
 .hero .next-container a{
   text-decoration: none;
 }
@@ -229,7 +229,6 @@ header.header .container .logo a:hover{
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-top:30rem;
 }
 .hero .next-container a, .hero .next-container a i{
   transition: transform 1s ease;
