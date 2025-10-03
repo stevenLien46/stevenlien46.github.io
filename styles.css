@@ -418,4 +418,15 @@ footer.footer {
   .about .img-container {
       margin-bottom:2rem;
   }
+  .project-container {
+    flex-direction: column;
+  }
+  .project-info {
+    width: 100%;
+  }
+  .project-img {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
 }
