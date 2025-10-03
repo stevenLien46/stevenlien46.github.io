@@ -409,10 +409,13 @@ footer.footer {
   }
 }
 @media screen and (max-width: 991px) {
-.about .section-container{
-  flex-direction:column-reverse;
-}
-.about .text-container, .about .img-container {
-    width: 100%;
-}
+  .about .section-container{
+    flex-direction:column-reverse;
+  }
+  .about .text-container, .about .img-container {
+      width: 100%;
+  }
+  .about .img-container {
+      margin-bottom:2rem;
+  }
 }
