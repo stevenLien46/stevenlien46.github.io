@@ -408,3 +408,11 @@ footer.footer {
     cursor: pointer;
   }
 }
+@media (max-width: 991px) {
+.about .section-container{
+  flex-direction:column-reverse;
+}
+.about .text-container, .about .img-container {
+    width: 100%;
+}
+}
